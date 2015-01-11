@@ -13,7 +13,7 @@ docker run --name jira-data ahaasler/jira-data
 2. Use it in the jira container:
 
 ```bash
-docker run --name jira --volumes-from jira-data -d -p 7990:7990 -p 7999:7999 ahaasler/jira
+docker run --name jira --volumes-from jira-data -d -p 8080:8080 ahaasler/jira
 ```
 
 > See [docker-jira](https://github.com/ahaasler/docker-jira "docker-jira repo") for more information on the jira container.
